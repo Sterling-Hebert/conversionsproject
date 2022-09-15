@@ -31,17 +31,19 @@ function decimalToAscii(blob) {
 /* Base 2 to ASCII */
 function binaryToAscii(blob) {
   // Your code here
-
+  return String.fromCharCode(blob)
 }
 
 /* Base 16 to ASCII */
 function hexadecimalToAscii(blob) {
   // Your code here
+  return String.fromCharCode(blob)
 }
 
 /* ASCII to base 10 */
 function asciiToDecimal(blob) {
   // Your code here
+
 }
 
 // console.log('Binary to hexadecimal:')
