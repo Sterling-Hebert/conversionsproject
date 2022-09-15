@@ -9,7 +9,13 @@ Consult documentation on how to utilize the following methods:
 
 /* Base 2 to base 16 */
 function binaryToHexadecimal(blob) {
-  // Your code here
+// blob = +blob
+//   return "0x" + parseInt(blob, 16)
+//
+let parsed = parseInt(blob, 16);
+// return parsed.toString(16)
+return "0x" + parsed
+
 }
 
 /* Base 16 to base 2 */
