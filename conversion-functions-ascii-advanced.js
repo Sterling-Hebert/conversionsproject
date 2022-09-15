@@ -9,12 +9,10 @@ Consult documentation on how to utilize the following methods:
 
 /* Base 2 to base 16 */
 function binaryToHexadecimal(blob) {
-// blob = +blob
-//   return "0x" + parseInt(blob, 16)
-//
-let parsed = parseInt(blob, 16);
-// return parsed.toString(16)
-return "0x" + parsed
+  // blob = Number(blob)
+  let binaryNum = blob.slice(2)
+  let parsed = parseInt(binaryNum, 2)
+  return "0x" + parsed.toString(16)
 
 }
 
